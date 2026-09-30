@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ArrowDown, Instagram, MessageCircle, Sparkles } from 'lucide-react'
+import { ArrowDown, AtSign, MessageCircle, Sparkles } from 'lucide-react'
 
 const products = [
   { name: 'Aros Sol', type: 'Aros · Arcilla', price: '$ 18.500', image: '/products/aro-sol.png' },
@@ -59,15 +59,10 @@ export default function Page() {
       <section id="contacto" className="bg-[#a4513e] px-6 py-24 text-[#fff7ef] sm:px-10 lg:px-16 lg:py-32">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1fr_0.8fr] lg:items-end">
           <div><Sparkles size={22} strokeWidth={1.2} className="mb-8 text-[#edc2ad]" /><p className="mb-4 text-xs uppercase tracking-[0.24em] text-[#edc2ad]">¿Hacemos algo juntas?</p><h2 className="max-w-lg text-5xl font-light leading-[0.95] tracking-[-0.05em] sm:text-7xl">Encontrá tu pieza favorita.</h2><p className="mt-8 max-w-md text-sm font-light leading-relaxed text-[#f0d9cc]">Escribinos para conocer disponibilidad, hacer un pedido especial o simplemente saludar.</p></div>
-          <div className="border-t border-[#c37e69] pt-6"><a href="https://instagram.com/luna.accesorios" className="flex items-center justify-between border-b border-[#c37e69] py-5 text-sm transition-colors hover:text-[#edc2ad]" target="_blank" rel="noreferrer"><span className="flex items-center gap-4"><Instagram size={19} strokeWidth={1.4} /> @luna.accesorios</span><span>↗</span></a><a href="https://wa.me/5491100000000" className="flex items-center justify-between py-5 text-sm transition-colors hover:text-[#edc2ad]" target="_blank" rel="noreferrer"><span className="flex items-center gap-4"><MessageCircle size={19} strokeWidth={1.4} /> WhatsApp</span><span>↗</span></a></div>
+          <div className="border-t border-[#c37e69] pt-6"><a href="https://instagram.com/luna.accesorios" className="flex items-center justify-between border-b border-[#c37e69] py-5 text-sm transition-colors hover:text-[#edc2ad]" target="_blank" rel="noreferrer"><span className="flex items-center gap-4"><AtSign size={19} strokeWidth={1.4} /> @luna.accesorios</span><span>↗</span></a><a href="https://wa.me/5491100000000" className="flex items-center justify-between py-5 text-sm transition-colors hover:text-[#edc2ad]" target="_blank" rel="noreferrer"><span className="flex items-center gap-4"><MessageCircle size={19} strokeWidth={1.4} /> WhatsApp</span><span>↗</span></a></div>
         </div>
         <footer className="mx-auto mt-24 flex max-w-7xl justify-between border-t border-[#c37e69] pt-5 text-[10px] uppercase tracking-[0.18em] text-[#edc2ad]"><span>Luna Accesorios</span><span>Hecho con amor · Buenos Aires</span></footer>
       </section>
     </main>
   )
 }
-
-<style jsx global>{`
-  html { scroll-behavior: smooth; }
-  body { font-family: Arial, Helvetica, sans-serif; }
-`}</style>
